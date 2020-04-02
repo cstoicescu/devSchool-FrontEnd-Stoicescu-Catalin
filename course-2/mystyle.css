@@ -1,0 +1,63 @@
+h1 {
+    color:red   !important;
+}
+
+/* .firstitem {
+    font-size: x-large;
+}
+.others {
+    font-size: medium;
+} */
+
+ul li {
+    font-size: medium;
+}
+
+
+/* pseudo clasa  */
+ul li:first-child {
+    font-size: x-large;                      
+}
+/* dupa ce a fost clickuit */
+a:visited {
+    color: deeppink;
+}
+
+a:hover {
+    font-size: x-large;
+}
+
+a:active {
+    color:aqua;
+}
+
+
+#hide {
+    display: none;
+    background-color: pink;
+    padding: 20 px;
+}
+
+div#magic:hover p#hide {
+    display: block;
+}
+
+ul li:nth-child(1)::first-letter {
+    color: violet;
+    font-size:xx-large;
+}
+
+p, li {
+    font-family: "Comic Sans MS";
+}
+
+html {
+    font-size: 20px;
+}
+
+
+/* 60px */
+#remex {
+    font-size : 3rem;
+}
+
