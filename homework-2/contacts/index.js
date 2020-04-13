@@ -34,7 +34,7 @@ function onSubmitAdd(event) {
 function onSubmitDelete(event) {
     event.preventDefault();
     const contact = read();
-    var checkboxes = document.getElementsByName('delete');
+    let checkboxes = document.getElementsByName('delete');
     for( let i = 0; i < checkboxes.length; i++) {
         if( checkboxes[i].checked)
         {   
@@ -62,8 +62,8 @@ function render() {
     } 
     
     export function ifChecked(){
-    var checkboxes = document.getElementsByName('delete');
-    var selected = [];
+    let checkboxes = document.getElementsByName('delete');
+    let selected = [];
     for( let i = 0; i < checkboxes.length; i++) {
         if( checkboxes[i].checked)
         {   
