@@ -19,8 +19,8 @@ export function deleteContacts (contactToRemove) {
     let contacts = read();
     let newContacts = contacts.filter(function(contact){
         return contact.name !== contactToRemove.name
-            && contact.email !== contactToRemove.email 
-            &&  contact.phone !== contactToRemove.phone
+            || contact.email !== contactToRemove.email 
+            ||  contact.phone !== contactToRemove.phone
     })
     // console.log(contactToRemove.name);
     write(newContacts);
