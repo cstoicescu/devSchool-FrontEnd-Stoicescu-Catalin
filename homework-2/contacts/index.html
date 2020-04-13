@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Contact management</title>
+        <meta charset="utf-8">
+        <script type="module">
+            import { init, ifChecked} from './index.js'
+            init();
+        </script>
+        
+    </head>
+
+    <body>
+        <h1>My contacts</h1>
+
+        <form id="form-add">
+            <p>
+            <label for id="name">Please enter your name</label>
+            <input type="text" name = "name" id = "name" placeholder = "Name" required>
+            </p>
+            <p>
+            <label for id="email">Please enter your email</label>
+            <input type="email" name = "email" id = "email" placeholder = "Email" >
+            </p>
+            <p>
+            <label for id="phone">Please enter your phone</label>
+            <input type="tel" name = "phone" id = "phone" placeholder = "Phone">
+            </p>
+            <button type='submit'> Add</button>
+        </form>
+    
+        <form id="form-delete" hidden>
+            <ul id = "list"> </ul>
+            <button type="submit" id="deletebutton">Delete selected objects</button>
+        </form>
+    </body>
+</html>
+
+

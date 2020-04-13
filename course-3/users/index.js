@@ -1,5 +1,5 @@
 const main = {
-    user : [],  // definire ---    cheie : valoare
+    users : [],  // definire ---    cheie : valoare
 
     error: "",
 
