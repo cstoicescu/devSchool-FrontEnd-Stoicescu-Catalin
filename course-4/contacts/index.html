@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Contact management</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#dddddd" />
+    <link rel="manifest" href="manifest.json" />
+    <script type="module">
+      import { init } from './index.js';
+      init();
+    </script>
+  </head>
+
+  <body>
+    <h1>My contacts</h1>
+
+    <form id="form-add">
+      <p>
+        <label for id="name">Please enter your name</label>
+        <input type="text" name="name" id="name" placeholder="Name" required />
+      </p>
+      <p>
+        <label for id="email">Please enter your email</label>
+        <input type="email" name="email" id="email" placeholder="Email" />
+      </p>
+      <p>
+        <label for id="phone">Please enter your phone</label>
+        <input type="tel" name="phone" id="phone" placeholder="Phone" />
+      </p>
+      <button type="submit">Add</button>
+    </form>
+
+    <form id="form-delete" hidden>
+      <ul id="list"></ul>
+      <button type="submit" name="delete" disabled>Delete selected objects</button>
+    </form>
+  </body>
+</html>
+
+<!-- sa apara butonul de delete cand doar cand selectam -->

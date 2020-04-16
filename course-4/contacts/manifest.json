@@ -1,0 +1,15 @@
+{
+    "name" : "My contacts",  //numele aplicatiei
+    "theme_color": "#ddddddd", // acelasi ca cel din meta, cel din meta are prioritate;
+    "display": "standalone",
+    "short_name": "My contacts",
+    "background_color:" "#f0f0f0f0",
+    "start_url" "./",
+    "icons": [
+    {
+
+    }
+]
+
+
+}
