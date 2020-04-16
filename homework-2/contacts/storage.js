@@ -10,7 +10,7 @@ function write(contacts) {
 
 export function append(contact) {
   const contacts = read();
-  contact.id = contacts.length;
+  contact.id = Date.now();
   contacts.push(contact);
   write(contacts);
 }
