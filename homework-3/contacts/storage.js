@@ -10,7 +10,7 @@ function write(contacts) {
 
 export function append(contact) {
   const contacts = read();
-  contact.id = Date.now();
+  contact.id = Date.now().toString();
   contacts.push(contact);
   write(contacts);
 }
@@ -32,4 +32,13 @@ export function deleteContacts(contactToRemove) {
   // })
   // console.log(contactToRemove.name);
   write(newContacts);
+}
+
+export function replace(contactReplace, contactId) {
+  const contacts = read();
+  const index = contacts.findIndex(contact => contact.id === contactReplace.id);
+  // console.log(index);
+  contacts[index] = contactReplace;
+  write(contacts);
+  // console.log(contactId, contacts);
 }

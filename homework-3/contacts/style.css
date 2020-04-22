@@ -1,0 +1,67 @@
+html {
+  margin-left: 3rem;
+  margin-right: 3rem;
+  font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+}
+
+h1 {
+  border-style: solid;
+  border-width: 0.5rem;
+  border-color: rgb(16, 153, 16);
+  background-color: rgb(16, 153, 16);
+  color: white;
+}
+
+h1,
+h2:nth-child(2),
+#form-add {
+  text-align: center;
+  margin-left: 40%;
+  margin-right: 40%;
+  min-width: fit-content;
+}
+
+#form-add > p > span > input:focus {
+  background-color: rgb(255, 255, 55);
+}
+
+#addbutton {
+  background-color: rgb(5, 146, 5);
+  border: 0;
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+#addbutton:hover {
+  background-color: rgb(67, 233, 67);
+}
+
+button:active {
+  box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6), inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+#form-add {
+  border-style: ridge;
+  text-align: center;
+  background-color: rgb(233, 225, 225);
+}
+
+.fa-id-badge,
+.fa-id-card {
+  color: orange;
+}
+
+.fa-envelope {
+  color: navy;
+}
+
+.fa-mobile-alt {
+  color: rgb(165, 62, 21);
+}
+
+fieldset {
+  border: 2px solid green;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  max-width: fit-content;
+}
