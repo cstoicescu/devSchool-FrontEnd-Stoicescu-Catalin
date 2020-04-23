@@ -3,6 +3,7 @@ import { append, deleteContacts, read, replace } from './storage.js';
 const deleteButton = document.getElementById('deletebutton');
 
 export function init() {
+  navigator.serviceWorker.register('sw.js');
   document.getElementById('form-add').addEventListener('submit', onSubmitAdd);
   document.getElementById('form-edit').addEventListener('submit', onSubmitDelete);
   render();
