@@ -1,0 +1,4 @@
+npm install lit-element
+npm install --save-dev webpack webpack-cli
+npm install --save-dev webpack-dev-server
+npm start
