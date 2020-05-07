@@ -18,7 +18,6 @@ export function remove(id) {
   const index = data.findIndex(todo => todo.id === id);
   // console.log(index, id, data);
   data.splice(index, 1);
-  console.log(index, id, data);
+  // console.log(index, id, data);
   write(data);
-  window.location.reload();
 }

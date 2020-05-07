@@ -1,5 +1,4 @@
 import { LitElement, html } from 'lit-element';
-import { remove } from './storage.js';
 export class ToDoElement extends LitElement {
   static get properties() {
     return {
@@ -11,10 +10,14 @@ export class ToDoElement extends LitElement {
   }
 
   render() {
-    return html`<li>
+    return html`<p>
       ${this.todo}
-      <button @click=${() => remove(this.id)}>Remove</button>
-    </li> `;
+      <button @click=${this._onRemove}>Remove</button>
+    </p> `;
+  }
+
+  _onRemove(event) {
+    this.dispatchEvent(new CustomEvent('todo-remove', { detail: this.id }));
   }
 }
 

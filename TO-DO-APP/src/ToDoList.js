@@ -9,16 +9,27 @@ export class ToDoList extends LitElement {
       },
       todo: { type: String },
       id: { type: String },
+      todos: { type: Object },
     };
   }
 
   render() {
-    const data = read();
-    this.myArray = Object.values(data);
+    this.myArray = Object.values(this.todos);
     return html` <p>To-Do List</p>
-      <ol>
-        ${this.myArray.map(i => html`<to-do-element todo=${i.todo} id=${i.id}></to-do-element>`)}
-      </ol>`;
+      <div>
+        ${this.myArray.map(
+          i =>
+            html`<to-do-element
+              @todo-remove=${this._onRemove}
+              .todo=${i.todo}
+              .id=${i.id}
+            ></to-do-element>`
+        )}
+      </div>`;
+  }
+
+  _onRemove(event) {
+    this.dispatchEvent(new CustomEvent('todo-remove', { detail: event.detail }));
   }
 }
 

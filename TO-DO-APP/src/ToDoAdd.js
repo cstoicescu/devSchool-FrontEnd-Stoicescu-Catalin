@@ -1,5 +1,5 @@
 import { LitElement, html } from 'lit-element';
-import { append } from './storage';
+
 export class ToDoAdd extends LitElement {
   render() {
     return html`
@@ -14,11 +14,13 @@ export class ToDoAdd extends LitElement {
   }
 
   _onSubmitAdd(event) {
+    event.preventDefault();
     const fd = new FormData(event.target);
     fd.set('id', Date.now().toString());
     const data = Object.fromEntries(fd);
     // console.log(event.target.elements.todo, fd, data);
-    append(data);
+    // append(data);
+    this.dispatchEvent(new CustomEvent('todo-add', { detail: data }));
   }
 }
 
