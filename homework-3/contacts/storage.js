@@ -34,7 +34,7 @@ export function deleteContacts(contactToRemove) {
   write(newContacts);
 }
 
-export function replace(contactReplace, contactId) {
+export function replace(contactReplace) {
   const contacts = read();
   const index = contacts.findIndex(contact => contact.id === contactReplace.id);
   // console.log(index);
