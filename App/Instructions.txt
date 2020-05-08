@@ -2,3 +2,7 @@ npm install lit-element
 npm install --save-dev webpack webpack-cli
 npm install --save-dev webpack-dev-server
 npm start
+
+npm install eslint --save-dev
+npm install eslint-config-prettier --save-dev
+./node_modules/.bin/eslint --init

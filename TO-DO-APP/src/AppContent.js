@@ -29,6 +29,7 @@ export class AppContent extends LitElement {
       }
 
       .legend {
+        border-radius: 0.3rem;
         flex: 1;
         background-color: #95b8f0;
         height: fit-content;
@@ -41,7 +42,7 @@ export class AppContent extends LitElement {
       to-do-list {
         flex: 1;
         max-width: 80%;
-        min-width: 80%;
+        min-width: 10%;
       }
       .ASAP {
         background-color: #fc4747;

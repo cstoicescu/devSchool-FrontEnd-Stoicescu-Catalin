@@ -33,6 +33,7 @@ export class ToDoAdd extends LitElement {
         background-color: #95b8f0;
       }
       form {
+        border-radius: 0.4rem;
         margin-top: 20px;
         padding: 2rem;
         border-style: ridge;
