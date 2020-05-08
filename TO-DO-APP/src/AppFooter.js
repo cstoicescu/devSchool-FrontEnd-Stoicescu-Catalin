@@ -4,9 +4,13 @@ export class AppFooter extends LitElement {
   static get styles() {
     return css`
       footer {
+        text-align: center;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
         background: mediumseagreen;
         color: white;
-        padding: 2rem;
       }
     `;
   }

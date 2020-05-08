@@ -4,7 +4,10 @@ export class AppHeader extends LitElement {
   static get styles() {
     return css`
       header {
-        background: dodgerblue;
+        position: relative;
+        left: 0;
+        text-align: center;
+        background: mediumseagreen;
         color: white;
         padding: 2rem;
       }
